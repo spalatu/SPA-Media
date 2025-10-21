@@ -90,17 +90,6 @@ html, body {
     cursor: default; 
 }
 
-.button {
-    width: 30%;
-    height: 50px;
-    background-color: white;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0;
-}
-
 a {
     color: #fff;
     text-decoration: none; /* remove underline */
