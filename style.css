@@ -10,6 +10,7 @@ html, body {
     height: 100%;
     font-family: 'Geist', sans-serif;
     letter-spacing: -0.025em;
+    cursor: none;
 }
 
 .landing {
@@ -28,7 +29,7 @@ html, body {
 
 .navbar {
     width: 100%;
-    padding: 20px 40px;
+    padding: 20px 25px;
     display: flex;
     gap: 100px; /* fixed horizontal gap between logo and links */
 }
@@ -87,7 +88,7 @@ html, body {
     text-decoration: none; /* remove underline */
     font-family: 'Geist', sans-serif;
     font-weight: 400;
-    cursor: default; 
+    cursor: none; 
 }
 
 .button {
@@ -106,7 +107,8 @@ a {
     text-decoration: none; /* remove underline */
     font-family: 'Geist', sans-serif;
     font-weight: 400;
-    cursor: default; 
+    cursor: none;
+    width: fit-content;
 }
 
 /* Hide "PROIECT 1-4" by default */
@@ -136,7 +138,7 @@ h3 {
     text-decoration: none; /* remove underline */
     font-family: 'Geist', sans-serif;
     font-weight: 400;
-    cursor: default; 
+    cursor: none; 
     font-size: 16px;
     letter-spacing: -0.01em;
     width: fit-content;
@@ -224,4 +226,101 @@ h3 {
 .player h3 {
     font-weight: 450;
     font-size: 14px;
+}
+
+.navbar-links a {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 1px;
+    cursor: none;
+  }
+  
+  .navbar-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: var(--line-width, 0%);
+    background-color: white;
+    transform-origin: left;
+  }
+
+  .custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: white;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: exclusion; /* softer than difference */
+    z-index: 10000;
+    transition: width 0.2s ease, height 0.2s ease;
+  }
+  
+  .custom-cursor.link-hover {
+    width: 15px;
+    height: 15px;
+  }
+
+  .loading-screen {
+    position: fixed;
+    inset: 0;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 900;
+    overflow: visible; /* allow SVG to fully show */
+}
+
+.loading-screen svg {
+    width: 281px;  /* force exact width */
+    height: 50px;  /* force exact height */
+    display: block; /* remove inline spacing issues */
+    fill: #000;
+}
+
+.projects {
+    width: 100%;
+    height: fit-content;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.psections {
+    width: 100%;
+    height: fit-content;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 25px 50px;
+}
+
+.projects h3 {
+    color: black;
+}
+
+.projects h1 {
+    color: black;
+    font-size: 128px;
+    line-height: 0.7em;
+    letter-spacing: -0.08em;
+    font-weight: 550;
+}
+
+.psectionsleft {
+    display: flex;
+    gap: 125px;
+    height: fit-content;
+}
+
+.psectionsright {
+    display: flex;
+    gap: 125px;
+    height: fit-content;
 }
