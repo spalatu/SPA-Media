@@ -13,25 +13,32 @@ html, body {
     cursor: none;
 }
 
-.landing {
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100vh;
-    background-color: #000;
-    background-image: url(bg.jpeg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    padding: 20px 25px;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    z-index: 80;
+}
+
+.landing-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* place behind content */
 }
 
 .navbar {
     width: 100%;
     padding: 20px 25px;
     display: flex;
-    gap: 100px; /* fixed horizontal gap between logo and links */
+    justify-content: space-between;
 }
 
 .navbar-logo {
@@ -124,6 +131,8 @@ a {
 }
 
 .top {
+    position: relative;
+    z-index: 1;
     width: 100%;
     height: fit-content;
     display: flex;
@@ -131,6 +140,7 @@ a {
     justify-content: space-between;
     align-items: center;
     gap: 15vh;
+    padding-top: 15vh;
 }
 
 h3 {
@@ -146,12 +156,17 @@ h3 {
 
 
 .project {
-    width: 200%;           /* match the width of navbar-links */
+    width: 35.5%;           /* match the width of navbar-links */
     color: #fff;
     font-family: 'Geist', sans-serif;
     font-weight: 400;
     font-size: 16px;
     letter-spacing: -0.01em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 25px;
 }
 
 .links-container {
@@ -161,6 +176,8 @@ h3 {
 }
 
 .bottom {
+    position: relative;
+    z-index: 1;
     width: 100%;
     height: fit-content;
     display: flex;
@@ -172,7 +189,7 @@ h3 {
 .bottom h1 {
     font-weight: 600;
     font-size: 64px;
-    width: 57%;
+    width: 63%;
     letter-spacing: -0.04em;
     line-height: 1.05em;
     color: white;
@@ -323,4 +340,13 @@ h3 {
     display: flex;
     gap: 125px;
     height: fit-content;
+}
+
+.landing {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15vh;
 }
