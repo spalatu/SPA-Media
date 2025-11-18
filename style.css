@@ -10,7 +10,6 @@ html, body {
     height: 100%;
     font-family: 'Geist', sans-serif;
     letter-spacing: -0.025em;
-    cursor: none;
 }
 
 .navbar {
@@ -22,6 +21,7 @@ html, body {
     display: flex;
     justify-content: space-between;
     z-index: 80;
+    mix-blend-mode: difference;
 }
 
 .landing-video {
@@ -273,9 +273,9 @@ h3 {
     background: white;
     pointer-events: none;
     transform: translate(-50%, -50%);
-    mix-blend-mode: exclusion; /* softer than difference */
     z-index: 10000;
     transition: width 0.2s ease, height 0.2s ease;
+    mix-blend-mode: difference;
   }
   
   .custom-cursor.link-hover {
