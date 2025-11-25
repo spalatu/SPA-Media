@@ -10,7 +10,7 @@ html, body {
     height: 100%;
     font-family: 'Geist', sans-serif;
     letter-spacing: -0.025em;
-    overflow: hidden;
+    overflow: clip;
 }
 
 .navbar {
