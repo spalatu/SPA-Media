@@ -87,6 +87,12 @@
     display: flex;
 }
 
+@media (max-width: 800px) {
+    .bottomtag {
+        width: fit-content;
+    }
+}
+
 .bottomtag h1 {
     font-size: 128px;
     letter-spacing: -0.05em;
@@ -95,6 +101,8 @@
     font-weight: 500;
     font-family: 'Geist', sans-serif;
 }
+
+
 
 .sec2 {
     width: 100%;
@@ -265,11 +273,47 @@
 
 .recogni-hug {
     position: sticky;
-    top: 300px;
+    top: 40vh;
     width: 100%;
     height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 3px;
+}
+
+.fourtitle {
+    width: 60%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.sec4 {
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fourtitle h1 {
+    color: #000;
+    font-size: 64px;
+    letter-spacing: -0.025em;
+    font-weight: 550;
+    font-family: 'Geist', sans-serif;
+    text-align: center;
+    line-height: 1em;
+}
+
+.fourtitle h3 {
+    color: #000;
+    font-size: 32px;
+    letter-spacing: -0.025em;
+    font-weight: 500;
+    font-family: 'Geist', sans-serif;
+    text-align: center;
+    line-height: 1em;
 }
