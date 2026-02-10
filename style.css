@@ -355,7 +355,7 @@ h3 {
 .video-container {
     width: 95%;
     aspect-ratio: 16 / 9;
-    overflow: hidden;
+    overflow: clip;
     border-radius: 6px;
     margin: 0 auto; /* centrează video-ul pe orizontală */
     margin-bottom: 10px;

@@ -1,139 +1,160 @@
 <!doctype html>
 <html>
-  <head>
+
+<head>
     <title>SPA Media</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="button.css">
     <link rel="stylesheet" href="content.css">
     <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.15/dist/lenis.css">
-  </head>
-  <body>
-<div class="custom-cursor"></div>
-<div class="loading-screen">
-    <svg width="281" height="50" viewBox="0 0 281 50" fill="black" xmlns="http://www.w3.org/2000/svg">
-        <path d="M149.392 29.4695H158.39C159.202 37.1855 164.073 40.7468 173.409 40.7468C181.73 40.7468 185.384 38.8342 185.384 35.0092C185.384 32.1734 183.828 30.6565 179.092 29.7992L164.073 27.1612C155.549 25.6444 150.745 21.6215 150.678 15.0925C150.678 6.8489 158.593 1.90271 171.109 1.90271C184.504 1.90271 192.758 8.43168 193.637 19.5771H184.707C183.963 12.7184 179.498 9.35497 171.109 9.35497C163.261 9.35497 159.608 11.3994 159.54 15.0266C159.676 17.7965 161.232 19.1154 165.697 19.9068L180.783 22.5448C189.646 24.1276 194.246 28.2164 194.246 34.8773C194.246 43.3847 186.534 48.199 173.409 48.199C158.999 48.199 150.475 41.4722 149.392 29.4695Z" fill="black"/>
-        <path d="M204.594 47.1438H195.799V2.9579H221.575C231.588 2.9579 237 7.50839 237 16.0818C237 24.6552 231.588 29.2057 221.575 29.2057H204.594V47.1438ZM204.594 10.3442V21.8194H221.778C226.243 21.8194 228.07 19.9728 228.07 16.0818C228.07 12.1248 226.243 10.3442 221.778 10.3442H204.594Z" fill="black"/>
-        <path d="M237.296 47.1438H227.825L248.527 2.9579H260.298L281 47.1438H271.529L265.778 34.4156H243.047L237.296 47.1438ZM254.007 10.0145L246.159 27.2272H262.666L254.818 10.0145H254.007Z" fill="black"/>
-        <path d="M0 49.7685V24.8843L44.1063 0V25L0 49.7685Z" fill="black"/>
-        <path d="M44.1063 49.8843V25L88.2127 0.115741V25.1157L44.1063 49.8843Z" fill="black"/>
-        <path d="M88.2127 50V25.1157L132.319 0.231481V25.2315L88.2127 50Z" fill="black"/>
-        <path d="M130.533 46.9928C130.425 47.4603 130.2 47.8285 129.857 48.0975C129.521 48.3665 129.12 48.5009 128.656 48.5009C128.313 48.5009 128.004 48.4465 127.728 48.3376C127.452 48.2224 127.216 48.0687 127.021 47.8765C126.826 47.678 126.675 47.4443 126.567 47.1753C126.466 46.9063 126.416 46.6149 126.416 46.3011C126.416 45.9809 126.466 45.6863 126.567 45.4173C126.668 45.1483 126.813 44.9178 127.001 44.7257C127.19 44.5335 127.422 44.383 127.697 44.2742C127.973 44.1653 128.283 44.1109 128.626 44.1109C129.11 44.1109 129.527 44.2357 129.877 44.4855C130.227 44.7289 130.442 45.0907 130.523 45.571H129.887C129.833 45.302 129.695 45.0811 129.473 44.9082C129.258 44.7289 128.979 44.6392 128.636 44.6392C128.387 44.6392 128.165 44.6808 127.97 44.7641C127.782 44.8473 127.623 44.9658 127.496 45.1195C127.368 45.2668 127.27 45.4397 127.203 45.6383C127.136 45.8368 127.102 46.0513 127.102 46.2819C127.102 46.506 127.136 46.7206 127.203 46.9255C127.277 47.1304 127.381 47.3098 127.516 47.4635C127.65 47.6172 127.812 47.742 128 47.8381C128.195 47.9278 128.414 47.9726 128.656 47.9726C128.999 47.9726 129.278 47.8829 129.494 47.7036C129.709 47.5179 129.84 47.2809 129.887 46.9928H130.533ZM125.417 46.2819C125.417 46.7238 125.494 47.1336 125.649 47.5115C125.81 47.8829 126.029 48.2064 126.305 48.4817C126.587 48.7571 126.917 48.9749 127.294 49.135C127.677 49.2887 128.091 49.3655 128.535 49.3655C128.972 49.3655 129.379 49.2887 129.756 49.135C130.133 48.9749 130.459 48.7571 130.735 48.4817C131.017 48.2064 131.236 47.8829 131.391 47.5115C131.552 47.1336 131.633 46.7238 131.633 46.2819C131.633 45.8528 131.552 45.4525 131.391 45.0811C131.236 44.7097 131.017 44.3894 130.735 44.1205C130.459 43.8451 130.133 43.6305 129.756 43.4768C129.379 43.3167 128.972 43.2367 128.535 43.2367C128.091 43.2367 127.677 43.3167 127.294 43.4768C126.917 43.6305 126.587 43.8451 126.305 44.1205C126.029 44.3894 125.81 44.7097 125.649 45.0811C125.494 45.4525 125.417 45.8528 125.417 46.2819ZM124.731 46.2819C124.731 45.776 124.832 45.3052 125.034 44.8698C125.235 44.4343 125.508 44.0564 125.851 43.7362C126.201 43.416 126.604 43.1662 127.062 42.9869C127.526 42.8012 128.017 42.7083 128.535 42.7083C129.053 42.7083 129.541 42.8012 129.998 42.9869C130.456 43.1662 130.856 43.416 131.199 43.7362C131.542 44.0564 131.814 44.4343 132.016 44.8698C132.218 45.3052 132.319 45.776 132.319 46.2819C132.319 46.8006 132.218 47.2809 132.016 47.7228C131.814 48.1583 131.542 48.5394 131.199 48.866C130.856 49.1862 130.456 49.436 129.998 49.6153C129.541 49.7946 129.053 49.8843 128.535 49.8843C128.017 49.8843 127.526 49.7946 127.062 49.6153C126.604 49.436 126.201 49.1862 125.851 48.866C125.508 48.5394 125.235 48.1583 125.034 47.7228C124.832 47.2809 124.731 46.8006 124.731 46.2819Z" fill="black"/>
+</head>
+
+<body>
+    <div class="custom-cursor"></div>
+    <div class="loading-screen">
+        <svg width="281" height="50" viewBox="0 0 281 50" fill="black" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M149.392 29.4695H158.39C159.202 37.1855 164.073 40.7468 173.409 40.7468C181.73 40.7468 185.384 38.8342 185.384 35.0092C185.384 32.1734 183.828 30.6565 179.092 29.7992L164.073 27.1612C155.549 25.6444 150.745 21.6215 150.678 15.0925C150.678 6.8489 158.593 1.90271 171.109 1.90271C184.504 1.90271 192.758 8.43168 193.637 19.5771H184.707C183.963 12.7184 179.498 9.35497 171.109 9.35497C163.261 9.35497 159.608 11.3994 159.54 15.0266C159.676 17.7965 161.232 19.1154 165.697 19.9068L180.783 22.5448C189.646 24.1276 194.246 28.2164 194.246 34.8773C194.246 43.3847 186.534 48.199 173.409 48.199C158.999 48.199 150.475 41.4722 149.392 29.4695Z"
+                fill="black" />
+            <path
+                d="M204.594 47.1438H195.799V2.9579H221.575C231.588 2.9579 237 7.50839 237 16.0818C237 24.6552 231.588 29.2057 221.575 29.2057H204.594V47.1438ZM204.594 10.3442V21.8194H221.778C226.243 21.8194 228.07 19.9728 228.07 16.0818C228.07 12.1248 226.243 10.3442 221.778 10.3442H204.594Z"
+                fill="black" />
+            <path
+                d="M237.296 47.1438H227.825L248.527 2.9579H260.298L281 47.1438H271.529L265.778 34.4156H243.047L237.296 47.1438ZM254.007 10.0145L246.159 27.2272H262.666L254.818 10.0145H254.007Z"
+                fill="black" />
+            <path d="M0 49.7685V24.8843L44.1063 0V25L0 49.7685Z" fill="black" />
+            <path d="M44.1063 49.8843V25L88.2127 0.115741V25.1157L44.1063 49.8843Z" fill="black" />
+            <path d="M88.2127 50V25.1157L132.319 0.231481V25.2315L88.2127 50Z" fill="black" />
+            <path
+                d="M130.533 46.9928C130.425 47.4603 130.2 47.8285 129.857 48.0975C129.521 48.3665 129.12 48.5009 128.656 48.5009C128.313 48.5009 128.004 48.4465 127.728 48.3376C127.452 48.2224 127.216 48.0687 127.021 47.8765C126.826 47.678 126.675 47.4443 126.567 47.1753C126.466 46.9063 126.416 46.6149 126.416 46.3011C126.416 45.9809 126.466 45.6863 126.567 45.4173C126.668 45.1483 126.813 44.9178 127.001 44.7257C127.19 44.5335 127.422 44.383 127.697 44.2742C127.973 44.1653 128.283 44.1109 128.626 44.1109C129.11 44.1109 129.527 44.2357 129.877 44.4855C130.227 44.7289 130.442 45.0907 130.523 45.571H129.887C129.833 45.302 129.695 45.0811 129.473 44.9082C129.258 44.7289 128.979 44.6392 128.636 44.6392C128.387 44.6392 128.165 44.6808 127.97 44.7641C127.782 44.8473 127.623 44.9658 127.496 45.1195C127.368 45.2668 127.27 45.4397 127.203 45.6383C127.136 45.8368 127.102 46.0513 127.102 46.2819C127.102 46.506 127.136 46.7206 127.203 46.9255C127.277 47.1304 127.381 47.3098 127.516 47.4635C127.65 47.6172 127.812 47.742 128 47.8381C128.195 47.9278 128.414 47.9726 128.656 47.9726C128.999 47.9726 129.278 47.8829 129.494 47.7036C129.709 47.5179 129.84 47.2809 129.887 46.9928H130.533ZM125.417 46.2819C125.417 46.7238 125.494 47.1336 125.649 47.5115C125.81 47.8829 126.029 48.2064 126.305 48.4817C126.587 48.7571 126.917 48.9749 127.294 49.135C127.677 49.2887 128.091 49.3655 128.535 49.3655C128.972 49.3655 129.379 49.2887 129.756 49.135C130.133 48.9749 130.459 48.7571 130.735 48.4817C131.017 48.2064 131.236 47.8829 131.391 47.5115C131.552 47.1336 131.633 46.7238 131.633 46.2819C131.633 45.8528 131.552 45.4525 131.391 45.0811C131.236 44.7097 131.017 44.3894 130.735 44.1205C130.459 43.8451 130.133 43.6305 129.756 43.4768C129.379 43.3167 128.972 43.2367 128.535 43.2367C128.091 43.2367 127.677 43.3167 127.294 43.4768C126.917 43.6305 126.587 43.8451 126.305 44.1205C126.029 44.3894 125.81 44.7097 125.649 45.0811C125.494 45.4525 125.417 45.8528 125.417 46.2819ZM124.731 46.2819C124.731 45.776 124.832 45.3052 125.034 44.8698C125.235 44.4343 125.508 44.0564 125.851 43.7362C126.201 43.416 126.604 43.1662 127.062 42.9869C127.526 42.8012 128.017 42.7083 128.535 42.7083C129.053 42.7083 129.541 42.8012 129.998 42.9869C130.456 43.1662 130.856 43.416 131.199 43.7362C131.542 44.0564 131.814 44.4343 132.016 44.8698C132.218 45.3052 132.319 45.776 132.319 46.2819C132.319 46.8006 132.218 47.2809 132.016 47.7228C131.814 48.1583 131.542 48.5394 131.199 48.866C130.856 49.1862 130.456 49.436 129.998 49.6153C129.541 49.7946 129.053 49.8843 128.535 49.8843C128.017 49.8843 127.526 49.7946 127.062 49.6153C126.604 49.436 126.201 49.1862 125.851 48.866C125.508 48.5394 125.235 48.1583 125.034 47.7228C124.832 47.2809 124.731 46.8006 124.731 46.2819Z"
+                fill="black" />
         </svg>
-</div>
-<div class="navbar">
-    <div class="navbar-logo">
-        <svg width="281" height="50" viewBox="0 0 281 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M149.392 29.4695H158.39C159.202 37.1855 164.073 40.7468 173.409 40.7468C181.73 40.7468 185.384 38.8342 185.384 35.0092C185.384 32.1734 183.828 30.6565 179.092 29.7992L164.073 27.1612C155.549 25.6444 150.745 21.6215 150.678 15.0925C150.678 6.8489 158.593 1.90271 171.109 1.90271C184.504 1.90271 192.758 8.43168 193.637 19.5771H184.707C183.963 12.7184 179.498 9.35497 171.109 9.35497C163.261 9.35497 159.608 11.3994 159.54 15.0266C159.676 17.7965 161.232 19.1154 165.697 19.9068L180.783 22.5448C189.646 24.1276 194.246 28.2164 194.246 34.8773C194.246 43.3847 186.534 48.199 173.409 48.199C158.999 48.199 150.475 41.4722 149.392 29.4695Z" fill="white"/>
-            <path d="M204.594 47.1438H195.799V2.9579H221.575C231.588 2.9579 237 7.50839 237 16.0818C237 24.6552 231.588 29.2057 221.575 29.2057H204.594V47.1438ZM204.594 10.3442V21.8194H221.778C226.243 21.8194 228.07 19.9728 228.07 16.0818C228.07 12.1248 226.243 10.3442 221.778 10.3442H204.594Z" fill="white"/>
-            <path d="M237.296 47.1438H227.825L248.527 2.9579H260.298L281 47.1438H271.529L265.778 34.4156H243.047L237.296 47.1438ZM254.007 10.0145L246.159 27.2272H262.666L254.818 10.0145H254.007Z" fill="white"/>
-            <path d="M0 49.7685V24.8843L44.1063 0V25L0 49.7685Z" fill="white"/>
-            <path d="M44.1063 49.8843V25L88.2127 0.115741V25.1157L44.1063 49.8843Z" fill="white"/>
-            <path d="M88.2127 50V25.1157L132.319 0.231481V25.2315L88.2127 50Z" fill="white"/>
-            <path d="M130.533 46.9928C130.425 47.4603 130.2 47.8285 129.857 48.0975C129.521 48.3665 129.12 48.5009 128.656 48.5009C128.313 48.5009 128.004 48.4465 127.728 48.3376C127.452 48.2224 127.216 48.0687 127.021 47.8765C126.826 47.678 126.675 47.4443 126.567 47.1753C126.466 46.9063 126.416 46.6149 126.416 46.3011C126.416 45.9809 126.466 45.6863 126.567 45.4173C126.668 45.1483 126.813 44.9178 127.001 44.7257C127.19 44.5335 127.422 44.383 127.697 44.2742C127.973 44.1653 128.283 44.1109 128.626 44.1109C129.11 44.1109 129.527 44.2357 129.877 44.4855C130.227 44.7289 130.442 45.0907 130.523 45.571H129.887C129.833 45.302 129.695 45.0811 129.473 44.9082C129.258 44.7289 128.979 44.6392 128.636 44.6392C128.387 44.6392 128.165 44.6808 127.97 44.7641C127.782 44.8473 127.623 44.9658 127.496 45.1195C127.368 45.2668 127.27 45.4397 127.203 45.6383C127.136 45.8368 127.102 46.0513 127.102 46.2819C127.102 46.506 127.136 46.7206 127.203 46.9255C127.277 47.1304 127.381 47.3098 127.516 47.4635C127.65 47.6172 127.812 47.742 128 47.8381C128.195 47.9278 128.414 47.9726 128.656 47.9726C128.999 47.9726 129.278 47.8829 129.494 47.7036C129.709 47.5179 129.84 47.2809 129.887 46.9928H130.533ZM125.417 46.2819C125.417 46.7238 125.494 47.1336 125.649 47.5115C125.81 47.8829 126.029 48.2064 126.305 48.4817C126.587 48.7571 126.917 48.9749 127.294 49.135C127.677 49.2887 128.091 49.3655 128.535 49.3655C128.972 49.3655 129.379 49.2887 129.756 49.135C130.133 48.9749 130.459 48.7571 130.735 48.4817C131.017 48.2064 131.236 47.8829 131.391 47.5115C131.552 47.1336 131.633 46.7238 131.633 46.2819C131.633 45.8528 131.552 45.4525 131.391 45.0811C131.236 44.7097 131.017 44.3894 130.735 44.1205C130.459 43.8451 130.133 43.6305 129.756 43.4768C129.379 43.3167 128.972 43.2367 128.535 43.2367C128.091 43.2367 127.677 43.3167 127.294 43.4768C126.917 43.6305 126.587 43.8451 126.305 44.1205C126.029 44.3894 125.81 44.7097 125.649 45.0811C125.494 45.4525 125.417 45.8528 125.417 46.2819ZM124.731 46.2819C124.731 45.776 124.832 45.3052 125.034 44.8698C125.235 44.4343 125.508 44.0564 125.851 43.7362C126.201 43.416 126.604 43.1662 127.062 42.9869C127.526 42.8012 128.017 42.7083 128.535 42.7083C129.053 42.7083 129.541 42.8012 129.998 42.9869C130.456 43.1662 130.856 43.416 131.199 43.7362C131.542 44.0564 131.814 44.4343 132.016 44.8698C132.218 45.3052 132.319 45.776 132.319 46.2819C132.319 46.8006 132.218 47.2809 132.016 47.7228C131.814 48.1583 131.542 48.5394 131.199 48.866C130.856 49.1862 130.456 49.436 129.998 49.6153C129.541 49.7946 129.053 49.8843 128.535 49.8843C128.017 49.8843 127.526 49.7946 127.062 49.6153C126.604 49.436 126.201 49.1862 125.851 48.866C125.508 48.5394 125.235 48.1583 125.034 47.7228C124.832 47.2809 124.731 46.8006 124.731 46.2819Z" fill="white"/>
-            </svg>
     </div>
-    <div class="navbar-links">
-        <div class="bar"></div>
-    
-        <!-- Wrap all links in a container -->
-        <div class="links-container">
+    <div class="navbar">
+        <div class="navbar-logo">
+            <svg width="281" height="50" viewBox="0 0 281 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M149.392 29.4695H158.39C159.202 37.1855 164.073 40.7468 173.409 40.7468C181.73 40.7468 185.384 38.8342 185.384 35.0092C185.384 32.1734 183.828 30.6565 179.092 29.7992L164.073 27.1612C155.549 25.6444 150.745 21.6215 150.678 15.0925C150.678 6.8489 158.593 1.90271 171.109 1.90271C184.504 1.90271 192.758 8.43168 193.637 19.5771H184.707C183.963 12.7184 179.498 9.35497 171.109 9.35497C163.261 9.35497 159.608 11.3994 159.54 15.0266C159.676 17.7965 161.232 19.1154 165.697 19.9068L180.783 22.5448C189.646 24.1276 194.246 28.2164 194.246 34.8773C194.246 43.3847 186.534 48.199 173.409 48.199C158.999 48.199 150.475 41.4722 149.392 29.4695Z"
+                    fill="white" />
+                <path
+                    d="M204.594 47.1438H195.799V2.9579H221.575C231.588 2.9579 237 7.50839 237 16.0818C237 24.6552 231.588 29.2057 221.575 29.2057H204.594V47.1438ZM204.594 10.3442V21.8194H221.778C226.243 21.8194 228.07 19.9728 228.07 16.0818C228.07 12.1248 226.243 10.3442 221.778 10.3442H204.594Z"
+                    fill="white" />
+                <path
+                    d="M237.296 47.1438H227.825L248.527 2.9579H260.298L281 47.1438H271.529L265.778 34.4156H243.047L237.296 47.1438ZM254.007 10.0145L246.159 27.2272H262.666L254.818 10.0145H254.007Z"
+                    fill="white" />
+                <path d="M0 49.7685V24.8843L44.1063 0V25L0 49.7685Z" fill="white" />
+                <path d="M44.1063 49.8843V25L88.2127 0.115741V25.1157L44.1063 49.8843Z" fill="white" />
+                <path d="M88.2127 50V25.1157L132.319 0.231481V25.2315L88.2127 50Z" fill="white" />
+                <path
+                    d="M130.533 46.9928C130.425 47.4603 130.2 47.8285 129.857 48.0975C129.521 48.3665 129.12 48.5009 128.656 48.5009C128.313 48.5009 128.004 48.4465 127.728 48.3376C127.452 48.2224 127.216 48.0687 127.021 47.8765C126.826 47.678 126.675 47.4443 126.567 47.1753C126.466 46.9063 126.416 46.6149 126.416 46.3011C126.416 45.9809 126.466 45.6863 126.567 45.4173C126.668 45.1483 126.813 44.9178 127.001 44.7257C127.19 44.5335 127.422 44.383 127.697 44.2742C127.973 44.1653 128.283 44.1109 128.626 44.1109C129.11 44.1109 129.527 44.2357 129.877 44.4855C130.227 44.7289 130.442 45.0907 130.523 45.571H129.887C129.833 45.302 129.695 45.0811 129.473 44.9082C129.258 44.7289 128.979 44.6392 128.636 44.6392C128.387 44.6392 128.165 44.6808 127.97 44.7641C127.782 44.8473 127.623 44.9658 127.496 45.1195C127.368 45.2668 127.27 45.4397 127.203 45.6383C127.136 45.8368 127.102 46.0513 127.102 46.2819C127.102 46.506 127.136 46.7206 127.203 46.9255C127.277 47.1304 127.381 47.3098 127.516 47.4635C127.65 47.6172 127.812 47.742 128 47.8381C128.195 47.9278 128.414 47.9726 128.656 47.9726C128.999 47.9726 129.278 47.8829 129.494 47.7036C129.709 47.5179 129.84 47.2809 129.887 46.9928H130.533ZM125.417 46.2819C125.417 46.7238 125.494 47.1336 125.649 47.5115C125.81 47.8829 126.029 48.2064 126.305 48.4817C126.587 48.7571 126.917 48.9749 127.294 49.135C127.677 49.2887 128.091 49.3655 128.535 49.3655C128.972 49.3655 129.379 49.2887 129.756 49.135C130.133 48.9749 130.459 48.7571 130.735 48.4817C131.017 48.2064 131.236 47.8829 131.391 47.5115C131.552 47.1336 131.633 46.7238 131.633 46.2819C131.633 45.8528 131.552 45.4525 131.391 45.0811C131.236 44.7097 131.017 44.3894 130.735 44.1205C130.459 43.8451 130.133 43.6305 129.756 43.4768C129.379 43.3167 128.972 43.2367 128.535 43.2367C128.091 43.2367 127.677 43.3167 127.294 43.4768C126.917 43.6305 126.587 43.8451 126.305 44.1205C126.029 44.3894 125.81 44.7097 125.649 45.0811C125.494 45.4525 125.417 45.8528 125.417 46.2819ZM124.731 46.2819C124.731 45.776 124.832 45.3052 125.034 44.8698C125.235 44.4343 125.508 44.0564 125.851 43.7362C126.201 43.416 126.604 43.1662 127.062 42.9869C127.526 42.8012 128.017 42.7083 128.535 42.7083C129.053 42.7083 129.541 42.8012 129.998 42.9869C130.456 43.1662 130.856 43.416 131.199 43.7362C131.542 44.0564 131.814 44.4343 132.016 44.8698C132.218 45.3052 132.319 45.776 132.319 46.2819C132.319 46.8006 132.218 47.2809 132.016 47.7228C131.814 48.1583 131.542 48.5394 131.199 48.866C130.856 49.1862 130.456 49.436 129.998 49.6153C129.541 49.7946 129.053 49.8843 128.535 49.8843C128.017 49.8843 127.526 49.7946 127.062 49.6153C126.604 49.436 126.201 49.1862 125.851 48.866C125.508 48.5394 125.235 48.1583 125.034 47.7228C124.832 47.2809 124.731 46.8006 124.731 46.2819Z"
+                    fill="white" />
+            </svg>
+        </div>
+        <div class="navbar-links">
+            <div class="bar"></div>
+
+            <!-- Wrap all links in a container -->
+            <div class="links-container">
+                <div class="linkrow">
+                    <div class="leftrow">
+                        <a href="#" id="nav-location">CHISINAU, MDA</a>
+                        <a href="#" id="nav-email">bogdanspalatu@icloud.com</a>
+                    </div>
+                    <div class="rightrow"><a id="live-clock">00:00:00</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-links" style="width: 12%;">
+            <div class="bar"></div>
             <div class="linkrow">
                 <div class="leftrow">
-                    <a href="#">CHISINAU, MDA</a>
-                    <a href="#">bogdanspalatu@icloud.com</a>
+                    <a href="#">PROJECT 1</a>
+                    <a href="#">PROJECT 2</a>
+                    <a href="#">PROJECT 3</a>
+                    <a href="#">PROJECT 4</a>
                 </div>
-                <div class="rightrow"><a id="live-clock">00:00:00</a></div>
             </div>
         </div>
-    </div>
-    <div class="navbar-links" style="width: 12%;">
-        <div class="bar"></div>
-        <div class="linkrow">
-            <div class="leftrow">
-                <a href="#">PROJECT 1</a>
-                <a href="#">PROJECT 2</a>
-                <a href="#">PROJECT 3</a>
-                <a href="#">PROJECT 4</a>
+        <div class="navbar-links">
+            <div class="bar"></div>
+            <div class="linkrow" style="gap: 25px; justify-content: unset;">
+                <div class="leftrow">
+                    <a href="index.html">HOME</a>
+                    <a href="proiecte.html">PROJECTS</a>
+                </div>
+                <div class="rightrow">
+                    <a href="despre.html">ABOUT US</a>
+                    <a href="community.html">COMMUNITY</a>
+                </div>
             </div>
         </div>
+        <button class="btn">Contact Us</button>
     </div>
-    <div class="navbar-links">
-        <div class="bar"></div>
-        <div class="linkrow" style="gap: 25px; justify-content: unset;">
-            <div class="leftrow">
-                <a href="index.html">HOME</a>
-                <a href="proiecte.html">PROJECTS</a>
-            </div>
-            <div class="rightrow">
-                <a href="despre.html">ABOUT US</a>
-                <a href="community.html">COMMUNITY</a>
+    <div class="landing">
+        <video id="hero-bg-video" autoplay muted loop
+            style="width:100%; height:100vh; object-fit:cover; position:absolute; top:0; left:0; z-index:0;">
+            <source src="videos/bg.mp4" type="video/mp4">
+        </video>
+        <div class="top">
+            <div class="project">
+                <h3 id="hero-project-label">
+                    PROJECT 1 | Aug 2025
+                    <p>WEB DESIGN, BRAND IDENTITY, COMMERCIAL</p>
+                </h3>
             </div>
         </div>
-    </div>
-    <button class="btn">Contact Us</button>
-</div>
-<div class="landing">
-    <video autoplay muted loop style="width:100%; height:100vh; object-fit:cover; position:absolute; top:0; left:0; z-index:0;">
-        <source src="bg.mp4" type="video/mp4">
-    </video>
-    <div class="top">
-        <div class="project">
-            <h3>
-                PROJECT 1  |  Aug 2025
-                <p>WEB DESIGN, BRAND IDENTITY, COMMERCIAL</p>
-            </h3>
-        </div>
-    </div>
-    <div class="bottom">
-        <h1>WHERE DESIGN MEETS CONVERSION</h1>
-        <div class="player">
-            <div class="textupper">
-                <div class="textleft">
-                    <svg width="10" height="12" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.7394 6.71901C13.7441 7.28831 13.7556 8.73172 12.7602 9.31705L2.26034 15.4914C1.26038 16.0794 0 15.3584 0 14.1983L0 2.0741C0 0.924756 1.23957 0.202422 2.23952 0.769061L12.7394 6.71901Z" fill="black"/>
+        <div class="bottom">
+            <h1 id="hero-title">WHERE DESIGN MEETS CONVERSION</h1>
+            <div class="player">
+                <div class="textupper">
+                    <div class="textleft">
+                        <svg width="10" height="12" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.7394 6.71901C13.7441 7.28831 13.7556 8.73172 12.7602 9.31705L2.26034 15.4914C1.26038 16.0794 0 15.3584 0 14.1983L0 2.0741C0 0.924756 1.23957 0.202422 2.23952 0.769061L12.7394 6.71901Z"
+                                fill="black" />
                         </svg>
                         <h3>SHOWREEL</h3>
+                    </div>
+                    <h3>0:31</h3>
                 </div>
-                <h3>0:31</h3>
+                <div class="video-container">
+                    <video id="hero-showreel-video" autoplay muted loop playsinline>
+                        <source src="videos/video.mp4" type="video/mp4">
+                        Your browser does not support video playback.
+                    </video>
+                </div>
             </div>
-            <div class="video-container">
-                <video autoplay muted loop playsinline>
-                  <source src="video.mp4" type="video/mp4">
-                  Your browser does not support video playback.
-                </video>
-              </div>
         </div>
     </div>
-</div>
-<div class="content">
-    <div class="sec1">
-        <div class="tag">
-            <h3>UI/UX DESIGN<p>DIGITAL BRANDING</h3>
-            <h3 style="opacity: 0.5;">SCROLL DOWN</h3>
-            <h3>SPA MEDIA®</h3>
-        </div>
-        <div class="subtext">
-            <h1>We are artists, designers,
-                producers, creatives, clients
-                and technicians.<span>We work
-                    together to create immersive
-                    experiences and bring ideas to
-                    life in real-world spaces.</span></h1>
-        </div>
-        <div class="sec2">
-            <div class="bigtag">
-                <h1 style="width: 100%; font-weight: 500;">SELECTED</h1>
-                <div class="bottomtag">
-                    <h1>WORK</h1>
-                    <h1>©16/25</h1>
-                </div>
+    <div class="content">
+        <div class="sec1">
+            <div class="tag">
+                <h3 id="about-tagline">UI/UX DESIGN<p>DIGITAL BRANDING</h3>
+                <h3 style="opacity: 0.5;">SCROLL DOWN</h3>
+                <h3 id="about-footer-text">SPA MEDIA®</h3>
             </div>
-            <div class="projectss">
-                <h3 style="font-size: 16px; opacity: 0.75; padding-top: 5px;">Instagram<p>Behance</h3>
-                <div class="seccright">
+            <div class="subtext">
+                <h1 id="about-heading">We are artists, designers,
+                    producers, creatives, clients
+                    and technicians.<span id="about-subheading">We work
+                        together to create immersive
+                        experiences and bring ideas to
+                        life in real-world spaces.</span></h1>
+            </div>
+            <div class="sec2">
+                <div class="bigtag">
+                    <h1 style="width: 100%; font-weight: 500;">SELECTED</h1>
+                    <div class="bottomtag">
+                        <h1>WORK</h1>
+                        <h1>©16/25</h1>
+                    </div>
+                </div>
+                <div class="projectss">
+                    <h3 style="font-size: 16px; opacity: 0.75; padding-top: 5px;">Instagram<p>Behance</h3>
+                    <div class="seccright">
                         <div class="year" style="border: 0;">
                             <h3 style="width: 25%; padding-top: 5px;">2024</h3>
-                            <div class="prlist">
+                            <div class="prlist" id="project-list-2024">
                                 <div class="pritem" style="border: 0;">
                                     <h3>GURP</h3>
                                     <h3 style="opacity: 0.75;">CORPORATE WEBSITE</h3>
@@ -150,7 +171,7 @@
                         </div>
                         <div class="year">
                             <h3 style="width: 25%;">2025</h3>
-                            <div class="prlist">
+                            <div class="prlist" id="project-list-2025">
                                 <div class="pritem" style="border: 0;">
                                     <h3>GURP</h3>
                                     <h3 style="opacity: 0.75;">CORPORATE WEBSITE</h3>
@@ -165,259 +186,174 @@
                                 </div>
                             </div>
                         </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="sec3">
-        <img src="image.png" alt="image" class="screener">
-        <div class="recogni">
-            <div class="recogni-title">
-                <h3>2020</h3>
-                <h3>AWARDS & <p>RECOGNITION</h3>
-                <h3>2025</h3>
-            </div>
-            <div class="recogni-items">
-                <img src="phone.png" class="recogni-img">
-                <div class="recogni-right">
-                    <div class="recogni-hug">
-                
-                        <div class="recogni-item">
-                            <h3>SBID International Interior Design Awards</h3>
-                            <h3>Modern Mosque</h3>
-                        </div>
-                
-                        <div class="recogni-item">
-                            <h3>SBID International Interior Design Awards</h3>
-                            <h3>Dragonfly</h3>
-                        </div>
-                
-                        <div class="recogni-item">
-                            <h3>World Architecture Festival</h3>
-                            <h3>The Lodge</h3>
-                        </div>
-                
-                        <div class="recogni-item">
-                            <h3>The American Architecture Awards</h3>
-                            <h3>Golden Beach</h3>
-                        </div>
-                
-                        <div class="recogni-item">
-                            <h3>The American Architecture Awards</h3>
-                            <h3>Montane Ranch</h3>
-                        </div>
-                
-                        <div class="recogni-item">
-                            <h3>Best of Year Awards by Interior Design Magazine</h3>
-                            <h3>Golden Dawn</h3>
-                        </div>
-                
-                        <div class="recogni-item">
-                            <h3>SBID International Interior Design Awards</h3>
-                            <h3>YDF Interiors Showroom</h3>
-                        </div>
-                
-                        <div class="recogni-item">
-                            <h3>Global Future Design Awards</h3>
-                            <h3>Nurai Island</h3>
-                        </div>
-                
-                        <div class="recogni-item">
-                            <h3>Global Future Design Awards</h3>
-                            <h3>Residential Complex in Estepona</h3>
-                        </div>
-                
-                        <div class="recogni-item">
-                            <h3>Global Future Design Awards</h3>
-                            <h3>Golden Beach</h3>
-                        </div>
-                
-                        <div class="recogni-item">
-                            <h3>Global Future Design Awards</h3>
-                            <h3>YDF Interiors Showroom</h3>
-                        </div>
-                
-                        <div class="recogni-item">
-                            <h3>LIV Hospitality Design Awards</h3>
-                            <h3>Alfresco Restaurant</h3>
-                        </div>
-                
-                        <div class="recogni-item">
-                            <h3>LIV Hospitality Design Awards</h3>
-                            <h3>Native House</h3>
-                        </div>
-                
-                        <div class="recogni-item">
-                            <h3>LIV Hospitality Design Awards</h3>
-                            <h3>Corine</h3>
-                        </div>
-                
-                        <div class="recogni-item">
-                            <h3>Outstanding Property Award London</h3>
-                            <h3>Native House</h3>
-                        </div>
-                
-                        <div class="recogni-item">
-                            <h3>The International Hotel & Property Design Awards</h3>
-                            <h3>Alfresco Restaurant</h3>
-                        </div>
-                
-                        <div class="recogni-item">
-                            <h3>SBID International Interior Design Awards</h3>
-                            <h3>Native House</h3>
-                        </div>
-                
                     </div>
                 </div>
             </div>
         </div>
-        <div class="recogni">
-            <div class="recogni-title">
-                <h3>2018</h3>
-                <h3>AWARDS & <p>RECOGNITION</h3>
-                <h3>2025</h3>
-            </div>
-            <div class="recogni-items">
-                <img src="phone.png" class="recogni-img">
-                <div class="recogni-right">
-                    <div class="recogni-hug">
-                
-                        <div class="recogni-item">
-                            <h3>SBID International Interior Design Awards</h3>
-                            <h3>Modern Mosque</h3>
+        <div class="sec3">
+            <img id="about-image" src="images/image.png" alt="image" class="screener">
+            <div class="recogni">
+                <div class="recogni-title">
+                    <h3>2020</h3>
+                    <h3>AWARDS & <p>RECOGNITION</h3>
+                    <h3>2025</h3>
+                </div>
+                <div class="recogni-items">
+                    <img src="images/phone.png" class="recogni-img">
+                    <div class="recogni-right">
+                        <div class="recogni-hug">
+
+                            <div class="recogni-item">
+                                <h3>SBID International Interior Design Awards</h3>
+                                <h3>Modern Mosque</h3>
+                            </div>
+
+                            <div class="recogni-item">
+                                <h3>SBID International Interior Design Awards</h3>
+                                <h3>Dragonfly</h3>
+                            </div>
+
+                            <div class="recogni-item">
+                                <h3>World Architecture Festival</h3>
+                                <h3>The Lodge</h3>
+                            </div>
+
+                            <div class="recogni-item">
+                                <h3>The American Architecture Awards</h3>
+                                <h3>Golden Beach</h3>
+                            </div>
+
+                            <div class="recogni-item">
+                                <h3>The American Architecture Awards</h3>
+                                <h3>Montane Ranch</h3>
+                            </div>
+
+                            <div class="recogni-item">
+                                <h3>Best of Year Awards by Interior Design Magazine</h3>
+                                <h3>Golden Dawn</h3>
+                            </div>
+
+                            <div class="recogni-item">
+                                <h3>SBID International Interior Design Awards</h3>
+                                <h3>YDF Interiors Showroom</h3>
+                            </div>
+
+                            <div class="recogni-item">
+                                <h3>Global Future Design Awards</h3>
+                                <h3>Nurai Island</h3>
+                            </div>
+
+                            <div class="recogni-item">
+                                <h3>Global Future Design Awards</h3>
+                                <h3>Residential Complex in Estepona</h3>
+                            </div>
+
+                            <div class="recogni-item">
+                                <h3>Global Future Design Awards</h3>
+                                <h3>Golden Beach</h3>
+                            </div>
+
+                            <div class="recogni-item">
+                                <h3>Global Future Design Awards</h3>
+                                <h3>YDF Interiors Showroom</h3>
+                            </div>
+
+                            <div class="recogni-item">
+                                <h3>LIV Hospitality Design Awards</h3>
+                                <h3>Alfresco Restaurant</h3>
+                            </div>
+
+                            <div class="recogni-item">
+                                <h3>LIV Hospitality Design Awards</h3>
+                                <h3>Native House</h3>
+                            </div>
+
+                            <div class="recogni-item">
+                                <h3>LIV Hospitality Design Awards</h3>
+                                <h3>Corine</h3>
+                            </div>
+
+                            <div class="recogni-item">
+                                <h3>Outstanding Property Award London</h3>
+                                <h3>Native House</h3>
+                            </div>
+
+                            <div class="recogni-item">
+                                <h3>The International Hotel & Property Design Awards</h3>
+                                <h3>Alfresco Restaurant</h3>
+                            </div>
+
+                            <div class="recogni-item">
+                                <h3>SBID International Interior Design Awards</h3>
+                                <h3>Native House</h3>
+                            </div>
+
                         </div>
-                
-                        <div class="recogni-item">
-                            <h3>SBID International Interior Design Awards</h3>
-                            <h3>Dragonfly</h3>
-                        </div>
-                
-                        <div class="recogni-item">
-                            <h3>World Architecture Festival</h3>
-                            <h3>The Lodge</h3>
-                        </div>
-                
-                        <div class="recogni-item">
-                            <h3>The American Architecture Awards</h3>
-                            <h3>Golden Beach</h3>
-                        </div>
-                
-                        <div class="recogni-item">
-                            <h3>The American Architecture Awards</h3>
-                            <h3>Montane Ranch</h3>
-                        </div>
-                
-                        <div class="recogni-item">
-                            <h3>Best of Year Awards by Interior Design Magazine</h3>
-                            <h3>Golden Dawn</h3>
-                        </div>
-                
-                        <div class="recogni-item">
-                            <h3>SBID International Interior Design Awards</h3>
-                            <h3>YDF Interiors Showroom</h3>
-                        </div>
-                
-                        <div class="recogni-item">
-                            <h3>Global Future Design Awards</h3>
-                            <h3>Nurai Island</h3>
-                        </div>
-                
-                        <div class="recogni-item">
-                            <h3>Global Future Design Awards</h3>
-                            <h3>Residential Complex in Estepona</h3>
-                        </div>
-                
-                        <div class="recogni-item">
-                            <h3>Global Future Design Awards</h3>
-                            <h3>Golden Beach</h3>
-                        </div>
-                
-                        <div class="recogni-item">
-                            <h3>Global Future Design Awards</h3>
-                            <h3>YDF Interiors Showroom</h3>
-                        </div>
-                
-                        <div class="recogni-item">
-                            <h3>LIV Hospitality Design Awards</h3>
-                            <h3>Alfresco Restaurant</h3>
-                        </div>
-                
-                        <div class="recogni-item">
-                            <h3>LIV Hospitality Design Awards</h3>
-                            <h3>Native House</h3>
-                        </div>
-                
-                        <div class="recogni-item">
-                            <h3>LIV Hospitality Design Awards</h3>
-                            <h3>Corine</h3>
-                        </div>
-                
-                        <div class="recogni-item">
-                            <h3>Outstanding Property Award London</h3>
-                            <h3>Native House</h3>
-                        </div>
-                
-                        <div class="recogni-item">
-                            <h3>The International Hotel & Property Design Awards</h3>
-                            <h3>Alfresco Restaurant</h3>
-                        </div>
-                
-                        <div class="recogni-item">
-                            <h3>SBID International Interior Design Awards</h3>
-                            <h3>Native House</h3>
-                        </div>
-                
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="sec4">
-        <div class="fourtitle">
-            <h3>GET STARTED</h3>
-            <h1>Let's make things happen</h1>
+        <div class="sec4">
+            <div class="fourtitle">
+                <h3 id="contact-title">GET STARTED</h3>
+                <h1 id="contact-heading">Let's make things happen</h1>
+            </div>
+            <div class="fourimg">
+                <img src="images/phone.png" alt="" style="padding-top: 33vh;">
+                <img src="images/img2.jpeg" alt="" style="padding-top: 160vh;">
+                <img src="images/img3.jpeg" alt="" style="padding-top: 90vh;">
+                <img src="images/img4.jpeg" alt="" style="padding-top: 60vh;">
+                <img src="images/img5.jpeg" alt="" style="padding-top: 125vh;">
+            </div>
         </div>
     </div>
-</div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="script.js"></script>
-<script src="cursor.js"></script>
-<script src="loading.js"></script>
-<script>
-function updateClock() {
-    const clock = document.getElementById('live-clock');
-    if (!clock) return;
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/loading.js"></script>
+    <script src="js/dynamic-loader.js"></script>
+    <script>
+        function updateClock() {
+            const clock = document.getElementById('live-clock');
+            if (!clock) return;
 
-    const now = new Date();
-    const hours = String(now.getHours()).padStart(2,'0');
-    const minutes = String(now.getMinutes()).padStart(2,'0');
-    const seconds = String(now.getSeconds()).padStart(2,'0');
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
 
-    clock.textContent = `${hours}:${minutes}:${seconds}`;
-}
+            clock.textContent = `${hours}:${minutes}:${seconds}`;
+        }
 
-setInterval(updateClock, 1000);
-updateClock();
+        setInterval(updateClock, 1000);
+        updateClock();
     </script>
 
-<script src="https://unpkg.com/lenis@1.3.15/dist/lenis.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.3.15/dist/lenis.min.js"></script>
 
-<script>
-  const lenis = new Lenis({
-    duration: 1.5,
-    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-    smooth: true,
-    wheelMultiplier: 1,
-    smoothWheel: true,
-    orientation: 'vertical',
-  });
+    <script>
+        const lenis = new Lenis({
+            duration: 1.5,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            smooth: true,
+            wheelMultiplier: 1,
+            smoothWheel: true,
+            orientation: 'vertical',
+        });
 
-  function raf(time) {
-    lenis.raf(time);
-    requestAnimationFrame(raf);
-  }
-  requestAnimationFrame(raf);
-</script>
-  </body>
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
+    </script>
+
+    <script>
+        document.querySelector('.btn').addEventListener('click', () => {
+            console.log('Apasat');
+        });
+    </script>
+</body>
+
 </html>

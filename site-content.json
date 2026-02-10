@@ -1,0 +1,56 @@
+{
+  "navbar": {
+    "location": "CHISINAU, MDA",
+    "email": "bogdanspalatu@icloud.com"
+  },
+  "hero": {
+    "projectLabel": "PROJECT 1 | Aug 2025",
+    "projectTags": "WEB DESIGN, BRAND IDENTITY, COMMERCIAL",
+    "title": "WHERE DESIGN MEETS CONVERSION",
+    "videoSource": "videos/bg.mp4",
+    "showreelLabel": "SHOWREEL",
+    "showreelVideo": "videos/video.mp4"
+  },
+  "about": {
+    "tagline": "UI/UX DESIGN | DIGITAL BRANDING",
+    "heading": "We are artists, designers, producers, creatives, clients and technicians.",
+    "subheading": "We work together to create immersive experiences and bring ideas to life in real-world spaces.",
+    "footerText": "SPA MEDIA®",
+    "imageSource": "images/image.png"
+  },
+  "projects": {
+    "year2024": [
+      {
+        "name": "GURP",
+        "type": "CORPORATE WEBSITE"
+      },
+      {
+        "name": "48CONCEPTS",
+        "type": "MARKETING AGENCY"
+      },
+      {
+        "name": "OAKTREE",
+        "type": "DIGITAL STUDIO"
+      }
+    ],
+    "year2025": [
+      {
+        "name": "GURP",
+        "type": "CORPORATE WEBSITE"
+      },
+      {
+        "name": "48CONCEPTS",
+        "type": "MARKETING AGENCY"
+      },
+      {
+        "name": "OAKTREE",
+        "type": "DIGITAL STUDIO"
+      }
+    ]
+  },
+  "contact": {
+    "title": "GET STARTED",
+    "heading": "Let's make things happen",
+    "buttonText": "Contact Us"
+  }
+}
