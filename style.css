@@ -368,3 +368,52 @@ h3 {
     border-radius: 6px;
     display: block;
   }
+/* Dark Mode Styles */
+body.dark-mode .content {
+    background-color: #000 !important;
+}
+
+body.dark-mode .content h1,
+body.dark-mode .content h3,
+body.dark-mode .content p,
+body.dark-mode .tag h3,
+body.dark-mode .recogni h3,
+body.dark-mode .recogni-right h3,
+body.dark-mode .recogni-item,
+body.dark-mode .projectss h3,
+body.dark-mode .seccright h3 {
+    color: #fff !important;
+}
+
+body.dark-mode .content h1 span {
+    color: #fff !important;
+    opacity: 0.6 !important;
+}
+
+body.dark-mode .year,
+body.dark-mode .projectss,
+body.dark-mode .pritem,
+body.dark-mode .recogni {
+    border-color: #333 !important;
+}
+
+body.dark-mode .recogni-item:hover {
+    border-bottom: 0.25px #fff solid !important;
+}
+
+body.dark-mode .pritem:hover {
+    background-color: #1a1a1a !important;
+}
+
+body.dark-mode .loading-screen {
+    background: #000 !important;
+}
+
+body.dark-mode .loading-screen svg {
+    fill: #fff !important;
+}
+
+/* Ensure navbar transitions smoothly if needed */
+.navbar {
+    transition: background-color 0.3s ease;
+}
