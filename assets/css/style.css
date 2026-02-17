@@ -6,7 +6,8 @@
     padding: 0;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     font-family: 'Geist', sans-serif;
     letter-spacing: -0.025em;
@@ -32,7 +33,7 @@ html, body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1; /* place behind content */
+    z-index: -1;
 }
 
 .navbar {
@@ -56,14 +57,12 @@ html, body {
     margin-top: 8px;
 }
 
-
 .linkrow {
     display: flex;
     justify-content: space-between;
-    gap: 2px;
+    gap: 10px;
 }
 
-/* bar width calculation */
 .bar {
     height: 3px;
     background-color: #fff;
@@ -71,12 +70,11 @@ html, body {
     width: 40%;
 }
 
-/* trick to make bar 3x wider but not overflow */
 .bar::after {
     content: '';
     display: inline-block;
-    width: calc(3 * 100%); /* 3x the width of .bar */
-    max-width: 100%;        /* ensures it never exceeds container */
+    width: calc(3 * 100%);
+    max-width: 100%;
 }
 
 .leftrow {
@@ -91,12 +89,12 @@ html, body {
     flex-direction: column;
 }
 
-.navbar-links a{
+.navbar-links a {
     color: #fff;
-    text-decoration: none; /* remove underline */
+    text-decoration: none;
     font-family: 'Geist', sans-serif;
     font-weight: 400;
-    cursor: none; 
+    cursor: none;
 }
 
 .button {
@@ -112,21 +110,19 @@ html, body {
 
 a {
     color: #fff;
-    text-decoration: none; /* remove underline */
+    text-decoration: none;
     font-family: 'Geist', sans-serif;
     font-weight: 400;
     cursor: none;
     width: fit-content;
 }
 
-/* Hide "PROIECT 1-4" by default */
-.navbar > .navbar-links:nth-of-type(3) {
+.navbar>.navbar-links:nth-of-type(3) {
     display: none;
 }
 
-/* Show it only on very large screens */
 @media (min-width: 1400px) {
-    .navbar > .navbar-links:nth-of-type(3) {
+    .navbar>.navbar-links:nth-of-type(3) {
         display: flex;
     }
 }
@@ -146,18 +142,17 @@ a {
 
 h3 {
     color: #fff;
-    text-decoration: none; /* remove underline */
+    text-decoration: none;
     font-family: 'Geist', sans-serif;
     font-weight: 400;
-    cursor: none; 
+    cursor: none;
     font-size: 16px;
     letter-spacing: -0.01em;
     width: fit-content;
 }
 
-
 .project {
-    width: 35.5%;           /* match the width of navbar-links */
+    width: 35.5%;
     color: #fff;
     font-family: 'Geist', sans-serif;
     font-weight: 400;
@@ -173,7 +168,7 @@ h3 {
 .links-container {
     display: flex;
     flex-direction: column;
-    gap: 125px; /* spacing between linkrow and project */
+    gap: 125px;
 }
 
 .bottom {
@@ -212,7 +207,7 @@ h3 {
 }
 
 .player img {
-    width: calc(100% - 20px); /* 10px padding each side */
+    width: calc(100% - 20px);
     height: 75%;
     object-fit: cover;
     display: block;
@@ -240,7 +235,6 @@ h3 {
     letter-spacing: -0.03em;
 }
 
-
 .player h3 {
     font-weight: 450;
     font-size: 14px;
@@ -251,9 +245,9 @@ h3 {
     display: inline-block;
     padding-bottom: 1px;
     cursor: none;
-  }
-  
-  .navbar-links a::after {
+}
+
+.navbar-links a::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -262,9 +256,9 @@ h3 {
     width: var(--line-width, 0%);
     background-color: white;
     transform-origin: left;
-  }
+}
 
-  .custom-cursor {
+.custom-cursor {
     position: fixed;
     top: 0;
     left: 0;
@@ -277,14 +271,14 @@ h3 {
     z-index: 10000;
     transition: width 0.2s ease, height 0.2s ease;
     mix-blend-mode: difference;
-  }
-  
-  .custom-cursor.link-hover {
+}
+
+.custom-cursor.link-hover {
     width: 15px;
     height: 15px;
-  }
+}
 
-  .loading-screen {
+.loading-screen {
     position: fixed;
     inset: 0;
     background: #fff;
@@ -292,13 +286,13 @@ h3 {
     justify-content: center;
     align-items: center;
     z-index: 900;
-    overflow: visible; /* allow SVG to fully show */
+    overflow: visible;
 }
 
 .loading-screen svg {
-    width: 281px;  /* force exact width */
-    height: 50px;  /* force exact height */
-    display: block; /* remove inline spacing issues */
+    width: 281px;
+    height: 50px;
+    display: block;
     fill: #000;
 }
 
@@ -357,18 +351,18 @@ h3 {
     aspect-ratio: 16 / 9;
     overflow: clip;
     border-radius: 6px;
-    margin: 0 auto; /* centrează video-ul pe orizontală */
+    margin: 0 auto;
     margin-bottom: 10px;
-  }
-  
-  .video-container video {
+}
+
+.video-container video {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 6px;
     display: block;
-  }
-/* Dark Mode Styles */
+}
+
 body.dark-mode .content {
     background-color: #000 !important;
 }
@@ -413,7 +407,6 @@ body.dark-mode .loading-screen svg {
     fill: #fff !important;
 }
 
-/* Ensure navbar transitions smoothly if needed */
 .navbar {
     transition: background-color 0.3s ease;
 }

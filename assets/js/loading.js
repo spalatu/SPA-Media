@@ -1,15 +1,13 @@
 gsap.registerPlugin();
-
-const loadingScreen = document.querySelector('.loading-screen');
-const logo = loadingScreen.querySelector('svg');
-
+var loadingScreen = document.querySelector('.loading-screen');
+var logo = loadingScreen.querySelector('svg');
 gsap.timeline()
     .to(logo, {
         opacity: 1,
         duration: 0,
     })
     .to(logo, {
-        duration: 0.75,  // updated duration
+        duration: 0.75,
         opacity: 1,
     })
     .to(logo, {
@@ -22,5 +20,7 @@ gsap.timeline()
         duration: 1,
         y: "-100%",
         ease: "power2.inOut",
-        onComplete: () => loadingScreen.remove()
+        onComplete: function () {
+            loadingScreen.remove();
+        }
     });

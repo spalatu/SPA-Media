@@ -102,8 +102,6 @@
     font-family: 'Geist', sans-serif;
 }
 
-
-
 .sec2 {
     width: 100%;
     height: fit-content;
@@ -147,18 +145,18 @@
     display: flex;
     border-top: #202020 0.5px solid;
     align-items: center;
-    background-color: transparent;           /* initial background */
-    transition: background-color 0.3s ease;  /* smooth transition */
+    background-color: transparent;
+    transition: background-color 0.3s ease;
     padding: 0 10px;
 }
 
 .pritem:hover {
-    background-color: #6f6f6f;    
-    cursor: none;             /* background on hover */
+    background-color: #6f6f6f;
+    cursor: none;
 }
 
 .pritem:hover h3 {
-    color: #fff; /* text changes to white on hover */
+    color: #fff;
 }
 
 .seccright h3 {
@@ -291,7 +289,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    background-image: url(images/linebg.png);
+    background-image: url(../images/linebg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
