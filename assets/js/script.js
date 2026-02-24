@@ -16,4 +16,18 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
+
+  const yourDogName = document.getElementById("your-dog");
+  const bestDog = document.getElementById("best-dog");
+
+  if (yourDogName && bestDog) {
+    yourDogName.addEventListener("input", (event) => {
+      console.log("input change", event.target.value);
+      bestDog.innerText = "YOUR DOG " + event.target.value + " IS THE BEST!!";
+
+      if (event.target.value == "") {
+        bestDog.innerText = "";
+      }
+    });
+  }
 });

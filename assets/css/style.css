@@ -363,9 +363,27 @@ h3 {
     display: block;
 }
 
-body.dark-mode .content {
+body.dark-mode .content,
+body.dark-mode .sec-form {
     background-color: #000 !important;
 }
+
+body.dark-mode .minimal-input {
+    border-bottom-color: #fff !important;
+    color: #fff !important;
+}
+
+body.dark-mode .result-text {
+    color: #fff !important;
+}
+
+@media (max-width: 800px) {
+    .result-text {
+        font-size: 48px !important;
+    }
+}
+
+
 
 body.dark-mode .content h1,
 body.dark-mode .content h3,
